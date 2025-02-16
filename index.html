@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern and clean blog homepage">
+    <title>Nerd's homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+       
+        body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #FFFFFF;
+    background-color: #0D1117;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #0D1117;
+    padding: 10px 0;
+    border-bottom: 1px solid #00FF41;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00FF41;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00FFFF;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FF3C00;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.post-card {
+    background-color: #0D1117;
+    border: 1px solid #00FF41;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-card img {
+    width: 100%;
+    height: auto;
+}
+
+.post-card h2 {
+    font-size: 20px;
+    margin: 15px;
+    color: #00FF41;
+}
+
+.post-card p {
+    margin: 0 15px 15px;
+}
+
+.read-more {
+    display: inline-block;
+    margin: 0 15px 15px;
+    padding: 10px 15px;
+    background-color: #00FFFF;
+    color: #0D1117;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #FF3C00;
+}
+
+footer {
+    background-color: #0D1117;
+    padding: 20px 0;
+    border-top: 1px solid #00FF41;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+        .social-media a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .social-media img {
+            width: 24px;
+            height: 24px;
+        }
+
+        @media (min-width: 768px) {
+            .blog-posts {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .blog-posts {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Nerd's Zone</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="blog-posts">
+                <article class="post-card">
+                    <img src="/images/images.png" alt="Blog Post Image">
+                    
+                    <h2>Capture The Flag (CTF): A Thrilling Journey into Cybersecurity
+                    </h2>
+                    <p>
+                        In the dynamic world of cybersecurity, few activities are as engaging and educational as Capture The Flag (CTF) competitions. Whether you are a beginner taking your first steps or an experienced hacker honing your skills, CTFs provide a fun and challenging environment to test your knowledge, learn new techniques, and collaborate with others.
+                    </p>
+                    <a href="post1.html" class="read-more">Read More</a>
+                </article>
+                
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="#" aria-label="Facebook"><img src="images/icons8-facebook-48.png" alt="Twitter"></a>
+            <a href="#" aria-label="Twitter"><img src="images/icons8-x-48.png" alt="Twitter"></a>
+            <a href="#" aria-label="Instagram"><img src="images/icons8-instagram-48.png" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2023 Nerds Zone. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
